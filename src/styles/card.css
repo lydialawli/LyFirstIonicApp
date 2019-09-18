@@ -1,0 +1,31 @@
+.card {
+    width: 80%;
+    height: 60%;
+    margin: 0;
+	border: 1px solid #e2e2e2;
+    background-color: aquamarine;
+    padding: 5%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    background-image: url("https://i.pinimg.com/originals/04/68/53/04685394200eb93568e930e266b82969.jpg");
+}
+/* 
+.cardContainer {
+    background-color: blueviolet;
+
+} */
+
+.text {
+    color: white;
+}
+.quote {
+    font-size: 7vw;
+    font-family: Lato, sans-serif;
+}
+
+.author {
+    text-align: right;
+}
