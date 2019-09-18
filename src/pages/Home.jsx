@@ -4,29 +4,45 @@ import Card from '../components/Card.jsx';
 import '../styles/global.css';
 import MdHeart from 'react-ionicons/lib/MdHeart';
 import MdShare from 'react-ionicons/lib/MdShare';
+import axios from 'axios';
 import MdChatbubbles from 'react-ionicons/lib/MdChatbubbles';
 
 class Home extends React.Component {
+  state = {
+    quotes: []
+  }
+
+  // UNSAFE_componentWillMount() {
+  //   axios.get(`${process.env.REACT_APP_API}/reviews/${this.props.match.params.id}`)
+  //     .then(res => {
+
+  //       // this.setState({
+  //       //   quotes: res.data,
+  //       // })
+  //       console.log(res.data)
+  //     })
+  //     .catch(err => { console.log(err) })
+  // }
+
+
   render() {
     return (
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle>Quotes App</IonTitle>
+            <IonTitle style={{ textAlign: "center" }}>Quotes App</IonTitle>
           </IonToolbar>
         </IonHeader>
 
         <IonContent>
-          <IonGrid>
-            <IonCol class="ion-align-items-center" size="6">
-              <Card />
-              <IonRow class="ion-align-items-end">
-                <MdHeart fontSize="30px" color="black" />
-                <MdChatbubbles fontSize="30px" color="black" />
-                <MdShare fontSize="30px" color="black" />
-              </IonRow>
-            </IonCol>
-          </IonGrid>
+
+          <Card />
+          <div className="icons">
+            <MdHeart className="icon" />
+
+            <MdChatbubbles className="icon"  />
+            <MdShare className="icon" />
+          </div>
         </IonContent>
 
 

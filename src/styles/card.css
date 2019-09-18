@@ -1,7 +1,7 @@
 .card {
-    width: 80%;
+    /* width: 80%; */
     height: 60%;
-    margin: 0;
+    margin: 50px;
 	border: 1px solid #e2e2e2;
     background-color: aquamarine;
     padding: 5%;
@@ -28,4 +28,9 @@
 
 .author {
     text-align: right;
+}
+
+.icons {
+    padding: 5%;
+    text-align: center;
 }
